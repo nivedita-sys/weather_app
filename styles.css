@@ -1,0 +1,102 @@
+/* Initial background and layout */
+body.initial-background {
+    background-image: url("https://img.freepik.com/premium-vector/set-weather-icons-including-weather-icon-weather-icon_889180-327.jpg"); /* Initial background image */
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    color: white; /* Style for the heading */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    background-position:top;
+    border: 2px solid black;
+  outline:solid 2px;
+  margin: auto;  
+  padding: 3px;
+  background-image: linear-gradient(blue,skyblue);;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.weather-form input.input-box {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 250px;
+    background-position: center;
+    grid-area: span;
+    margin-bottom: 20px;
+}
+
+.weather-form button.get-weather-button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-position: center;
+}
+
+.weather-result {
+    margin-top: 30px;
+    display: none; /* Initially hidden */
+    background-position: center;
+}
+
+.weather-result h2, .weather-result p {
+    color: black;
+    font-size: 2.5em;
+    background-position: center;
+}
+
+.weather-result img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    background-position: center;
+}
+
+/* After weather is fetched, change background based on weather */
+.clear-sky {
+    background-image: url("https://purepng.com/public/uploads/large/purepng.com-weather-iconsymbolsiconsapple-iosiosios-8-iconsios-8-721522596142qx4ep.png"); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+}
+
+.clouds {
+    background-image: url("https://cdn4.iconfinder.com/data/icons/weather-flat-2/614/428_-_Cloudy-512.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.rain {
+    background-image: url("https://www.freepngimg.com/thumb/weather/86940-forecasting-weather-sky-atmosphere-rain-png-download-free.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.snow {
+    background-image: url("https://cdn1.iconfinder.com/data/icons/weather-471/128/SNOWY-512.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.default-weather {
+    background-image: url("https://cdn-icons-png.flaticon.com/256/8691/8691578.png");
+    background-size: cover;
+    background-position: center;
+}
